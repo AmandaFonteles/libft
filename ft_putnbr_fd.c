@@ -1,6 +1,7 @@
 //colocar header 42
 
 #include <unistd.h>
+#include <libft> //colocar o nome certo dps
 
 void    ft_putnbr_fd(int n, int fd)
 {
@@ -14,15 +15,20 @@ void    ft_putnbr_fd(int n, int fd)
     {
         if (n < 0)
         {
-
+            write (fd, "-", 1);
+            n = -n;
+            ft_putnbr_fd(n, fd);
         }
-        else if (0 >= n < 10)
+        else if (n >= 0 && n < 10)
         {
-
+            c = n + '0';
+            write (fd, &c, 1);
         }
         else
         {
-
+            ft_putnbr_fd (n/10, fd);
+            c = (n % 10) + '0';
+            write(fd, &c, 1);
         }
     }
 }
