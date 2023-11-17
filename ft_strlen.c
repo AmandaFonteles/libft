@@ -1,7 +1,7 @@
 //COLOCAR HEADER 42
 
 #include <unistd.h>
-#include <stdio.h>
+#include <libft> //MUDAR
 
 size_t ft_strlen(const char *str) //we use a const to indicate that the string shouldn't be modified by the function
 {
@@ -13,9 +13,4 @@ size_t ft_strlen(const char *str) //we use a const to indicate that the string s
         i++;
     }
     return i;
-}
-
-int main (void)
-{
- TESTAAAAAR
 }
