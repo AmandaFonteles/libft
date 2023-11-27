@@ -39,3 +39,37 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
         return (i + j);
     }
 }
+/*#include <stdio.h>
+
+int main() {
+    char dest[50];
+    char src[] = " World";
+    size_t dstsize;
+    size_t result;
+
+    // Test 1: Normal concatenation
+    dest[0] = 'H';
+    dest[1] = 'e';
+    dest[2] = 'l';
+    dest[3] = 'l';
+    dest[4] = 'o';
+    dest[5] = '\0';
+    dstsize = sizeof(dest);
+    result = ft_strlcat(dest, src, dstsize);
+    printf("Test 1 - Result: %zu, String: %s\n", result, dest);
+
+    // Test 2: Concatenation with limited buffer size
+    char small_dest[10] = "Hello";
+    dstsize = 9; // Limiting buffer size to 9
+    result = ft_strlcat(small_dest, src, dstsize);
+    printf("Test 2 - Result: %zu, String: %s\n", result, small_dest);
+
+    // Test 3: Buffer size is exactly the size of the existing string (no space for concatenation)
+    char exact_dest[6] = "Hello";
+    dstsize = 6; // Buffer size equal to length of exact_dest including null terminator
+    result = ft_strlcat(exact_dest, src, dstsize);
+    printf("Test 3 - Result: %zu, String: %s\n", result, exact_dest);
+
+    return 0;
+}
+*/
