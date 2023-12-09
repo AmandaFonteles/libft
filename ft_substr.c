@@ -1,42 +1,43 @@
 //HEADER 42
 
 #include <unistd.h>
-//#include <stdio.h>
-//#include <string.h>
-//#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 //#include minha biblioteca
-//TEM MAIS DE 25 LINHAS
+
+static char *alloc_substr(size_t n)
+{
+    char    *str;
+
+    str = (char *)malloc(sizeof(char) * (n + 1));
+    if (!str)
+        return NULL;
+    return (str);
+}
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    unsigned int i;
-    unsigned int s_len;
-    char *substr;
+    char    *substr;
+    size_t  i;
 
-    if (!s)
-        return (NULL);
-    s_len = ft_strlen(s);
-    if (s_len < start)
-    {
-        substr = malloc(sizeof(char) * 1);
-        if (!substr)
-            return (NULL);
-        substr[0] = '\0';
-        return (substr);
-    }
-    if (len > s_len - start)
-        len = s_len - start;
-    substr = malloc(sizeof(char) * (len + 1));
+    if(!s) 
+        return NULL;
+    if (start > ft_strlen(s))
+        len = 0;
+    else if (len > ft_strlen(s) - start)
+    len = ft_strlen(s) - start;
+    substr = alloc_substr(len);
     if (!substr)
-        return (NULL);
+        return NULL;
     i = 0;
-    while (i < len)
+    while( i < len && s[start + i])
     {
         substr[i] = s[start + i];
         i++;
     }
     substr[i] = '\0';
-    return (substr);
+    return substr;
 }
 
 /*int main() {

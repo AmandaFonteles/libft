@@ -2,7 +2,6 @@
 
 #include <unistd.h> //- PRECISA! Sem o programa nao reconhece size_t
 //#include <libft> - mudar p a biblioteca certa
-//TEM MAIS DE 25 LINHAS
 
 size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -18,17 +17,11 @@ size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
     j = 0;
     k = 0;
     while(dst[i] != '\0')
-    {
         i++;
-    }
     while(src[j] != '\0')
-    {
         j++;
-    }
     if (i >= dstsize) // dstsize = buffersize
-    {
         return(i + j);
-    }
     else
     {
         while((i + k) < (dstsize - 1) && src[k] != '\0')

@@ -1,0 +1,15 @@
+//HEADER 42
+
+#include "libft.h"
+
+void    ft_striteri(char *S, void (*f)(unsigned int, char *))
+{
+    size_t  i;
+
+    if (s && f)
+    {
+        i = 0;
+        while(*s)
+            f(i++, s++);
+    }
+}

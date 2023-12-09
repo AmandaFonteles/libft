@@ -5,35 +5,29 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-//TEM MAIS DE 25 LINHAS
 
 char    *ft_strjoin(const char  *s1, const char *s2) 
 {
     char    *result;
-    size_t  len_s1;
-    size_t  len_s2;
+    size_t  len;
     size_t  i;
     size_t  j;
 
-    len_s1 = 0;
-    len_s2 = 0;
+    len = 0;
     i = 0;
     j = 0;
-
-    if (s1 != NULL)
-        len_s1 = strlen(s1);
-    if (s2 != NULL)
-        len_s2 = strlen(s2);
-    
-    result = (char*)malloc(sizeof(char) * (len_s1 + len_s2 + 1));
+    if (s1 != NULL && s2 != NULL)
+        len = ft_strlen(s1) + ft_strlen(s2);
+    result = (char*)malloc(sizeof(char) * (len + 1));
     if (!result)
         return NULL;
-    
-    while (s1 && s1[i]) {
+    while (s1 && s1[i]) 
+    {
         result[i] = s1[i];
         i++;
     }
-    while (s2 && s2[j]) {
+    while (s2 && s2[j]) 
+    {
         result[i + j] = s2[j];
         j++;
     }
