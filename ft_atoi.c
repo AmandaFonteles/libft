@@ -14,9 +14,7 @@ int ft_atoi(const char  *str) //converts the INITIAL PORTION of the string point
 	num = 0;
 	while (str[i] == 32 || str[i] == '\n' || str[i] == '\t' || str[i] == '\v'
 			|| str[i] == '\f' || str[i] == '\r')
-    {
 		i++;
-    }
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')

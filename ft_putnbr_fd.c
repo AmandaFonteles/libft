@@ -2,6 +2,7 @@
 
 #include <unistd.h>
 #include <libft> //colocar o nome certo dps
+//TEM MAIS DE 25LINHAS
 
 void    ft_putnbr_fd(int n, int fd)
 {

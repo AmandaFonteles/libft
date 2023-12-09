@@ -2,6 +2,7 @@
 
 #include <unistd.h> 
 //#include <libft> replace with the name of yout library
+//DIMINUIR LINHAS
 
 void    *ft_memmove(void *dest, const void *src, size_t n)
 {

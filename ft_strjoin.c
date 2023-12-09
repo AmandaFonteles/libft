@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+//TEM MAIS DE 25 LINHAS
 
 char    *ft_strjoin(const char  *s1, const char *s2) 
 {
