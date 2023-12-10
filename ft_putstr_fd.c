@@ -1,6 +1,6 @@
-//colocar header 42
-#include <unistd.h>
-#include <libft> //trocar pela livraria certa ao final
+//header 42
+
+#include "libft.h"
 
 void ft_putstr_fd (char *str, int fd)
 {

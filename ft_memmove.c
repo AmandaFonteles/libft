@@ -1,9 +1,6 @@
 //HEADER 42
 
-#include <unistd.h> 
-//#include "libft.h"
-//TESTADA: TLVZ FUNCIONE, mas deu um probleminha no teste
-//NORMA:
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -26,21 +23,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest_ptr);
 }
-/*#include <stdio.h>
-#include <string.h>
-
-void *standard_memmove(void *dest, const void *src, size_t n)
-{
-    return memmove(dest, src, n);
-}
-int main() {
-    char src[] = "Example string";
-    ft_memmove(src + 5, src, 10); // Using your ft_memmove
-    printf("ft_memmove result: %s\n", src);
-
-    char src2[] = "Example string";
-    standard_memmove(src2 + 5, src2, 10); // Using standard memmove
-    printf("standard memmove result: %s\n", src2);
-
-    return 0;
-}*/

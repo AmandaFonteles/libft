@@ -1,6 +1,6 @@
 //colocar header 42
-#include <unistd.h>
-#include <libft> // mudr para o nome certo 
+
+#include "libft.h" 
 
 void    ft_putendl_fd (char *str, int fd)
 {

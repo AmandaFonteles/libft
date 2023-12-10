@@ -1,10 +1,6 @@
 //HEADER 42
 
-#include <stdio.h>
-#include <stdlib.h>
-//#include MINHA BIBLI
-//TESTADA: OK
-//NORMA:
+#include "libft.h"
 
 static int  str_len(int nbr)
 {
@@ -64,23 +60,3 @@ char    *ft_itoa(int n)
         str[0] = '-';
     return (str);
 }
-/*#include <stdio.h>
-#include <limits.h>
-
-int main() {
-    int numbers[] = {123, -123, 0, INT_MAX, INT_MIN};
-    char *converted_str;
-
-    for (int i = 0; i < 5; i++) {
-        converted_str = ft_itoa(numbers[i]);
-        if (converted_str == NULL) {
-            printf("Memory allocation failed for %d\n", numbers[i]);
-            continue;
-        }
-
-        printf("Original number: %d, Converted string: %s\n", numbers[i], converted_str);
-        free(converted_str);  // Free the memory allocated by ft_itoa
-    }
-
-    return 0;
-}*/

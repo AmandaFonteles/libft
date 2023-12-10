@@ -1,7 +1,6 @@
 //HEADER 42
 
-#include <unistd.h>
-#include <libft> //replace with the real name of the library
+#include "libft.h"
 
 int ft_strncmp(const char *s1, const char *s2, size_t n) //use const char * to ensure that the function doesn't modify the input strings
 {

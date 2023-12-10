@@ -1,7 +1,6 @@
 //HEADER 42
 
-#include <unistd.h> //idk if we need this library here
-#include <LIBFT>  //replace with the name of the library I created
+#include "libft.h"
 
 int ft_tolower (int c)
 {
