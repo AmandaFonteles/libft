@@ -2,6 +2,8 @@
 
 //#include <THE LIBRRY>
 #include <unistd.h> // necessary to include the NULL.
+//TESTADA: OK
+//NORMA:
 
 char    *ft_strchr(const char   *s, int   c) //returns a pointer to the FIRST occurence of the character c in the string s. The s is a const to prevent a change in the string
 {

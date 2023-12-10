@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 //#include MINHA BIBLI
+//TESTADA: OK
+//NORMA:
 
 static int  str_len(int nbr)
 {

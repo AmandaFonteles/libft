@@ -2,6 +2,8 @@
 
 #include <unistd.h>
 #include <libft> //MUDAR
+//TESTADA: OK
+//NORMA:
 
 size_t ft_strlen(const char *str) //we use a const to indicate that the string shouldn't be modified by the function
 {

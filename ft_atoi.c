@@ -1,9 +1,12 @@
 //HEADER 42
 
 #include <unistd.h>
+#include <stdlib.h>
 //#include <MINHA BIBLIOTECA>
 
-int ft_atoi(const char  *str) //converts the INITIAL PORTION of the string pointed to by nptr to int
+//TESTADA: OK
+//NORMA:
+int ft_atoi(const char  *str)
 {
 	int neg;
 	int i;

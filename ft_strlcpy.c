@@ -1,7 +1,9 @@
 //HEADER 42
 
 #include <unistd.h> //I dont think it's necessary
-#include <libft> //replace with the good library
+//#include <libft> //replace with the good library
+//TESTADA: OK
+//NORMA:
 
 size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -22,3 +24,19 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
     dst[i] = '\0';
     return(srcsize);
 }
+/*#include <stdio.h>
+#include <string.h>
+
+// Assume ft_strlcpy is already defined here
+
+int main() {
+    char src[] = "Hello, world!";
+    char dst1[50];
+    size_t result_ft;
+
+    // Testing ft_strlcpy
+    result_ft = ft_strlcpy(dst1, src, sizeof(dst1));
+    printf("ft_strlcpy: Copied '%s', length = %zu\n", dst1, result_ft);
+
+    return 0;
+}*/

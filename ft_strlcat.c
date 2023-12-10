@@ -2,6 +2,8 @@
 
 #include <unistd.h> //- PRECISA! Sem o programa nao reconhece size_t
 //#include <libft> - mudar p a biblioteca certa
+//TESTADA: OK
+//NORMA:
 
 size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

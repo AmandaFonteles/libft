@@ -5,6 +5,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+//TESTADA: OK
+//NORMA:
 
 char    *ft_strdup(const char *s)
 {
