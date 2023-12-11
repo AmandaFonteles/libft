@@ -1,21 +1,31 @@
-//HEADER 42
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: afontele <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/11 11:55:01 by afontele          #+#    #+#             */
+/*   Updated: 2023/12/11 12:00:57 by afontele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memchr(const void  *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    const unsigned char *str; //Declare a pointer to unsigned char to treat the input memory as bytes
-    size_t  i;
+	const unsigned char	*str;
+	size_t				i;
 
-    str = (const unsigned char*)s; //Cast the input pointer to a pointer to unsigned char for byte-wise comparison
-    i = 0;
-    while (i < n)
-    {
-        if (str[i] == (unsigned char)c)
-        {
-            return ((void *)&str[i]); //Return a pointer to the first occurrence of the character
-        }
-        i++;
-    } 
-    return NULL;
+	str = (const unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		if (str[i] == (unsigned char)c)
+		{
+			return ((void *)&str[i]);
+		}
+		i++;
+	}
+	return (NULL);
 }

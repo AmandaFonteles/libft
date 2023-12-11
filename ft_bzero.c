@@ -1,17 +1,27 @@
-//HEADER 42
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: afontele <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/11 10:17:44 by afontele          #+#    #+#             */
+/*   Updated: 2023/12/11 10:26:24 by afontele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void   *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    size_t  i;
-    unsigned char   *ptr;
+	unsigned char	*mem_ptr;
+	size_t			i;
 
-    ptr = s;
-    i = 0;
-    while (i < n)
-    {
-        ptr[i] = '\0';
-        i++;
-    }
+	mem_ptr = s;
+	i = 0;
+	while (i < n)
+	{
+		mem_ptr[i] = '\0';
+		i++;
+	}
 }

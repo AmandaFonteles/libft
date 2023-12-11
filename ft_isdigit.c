@@ -1,12 +1,20 @@
-//HEADER 42
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: afontele <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/11 10:51:10 by afontele          #+#    #+#             */
+/*   Updated: 2023/12/11 10:53:55 by afontele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    if (c >= '0' && c <= '9')
-    {
-        return 1; //return true if the character is a digit
-    }
-    return 0;
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
 }

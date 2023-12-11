@@ -1,16 +1,26 @@
-//colocar header 42
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: afontele <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/11 12:38:44 by afontele          #+#    #+#             */
+/*   Updated: 2023/12/11 12:40:54 by afontele         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h" 
 
-void    ft_putendl_fd (char *str, int fd)
+void	ft_putendl_fd(char *str, int fd)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while(str[i] != '\0')
-    {
-        write(fd, &str[i], 1);
-        i++;
-    }
-    write(fd, "\n", 1);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write(fd, &str[i], 1);
+		i++;
+	}
+	write(fd, "\n", 1);
 }
