@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stddef.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 /*libc_functions*/
 int		ft_isalpha(int c);
