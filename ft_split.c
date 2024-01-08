@@ -74,7 +74,7 @@ static char	**split(char const *s, char c, char **array, size_t words_count)
 			j++;
 		i++;
 	}
-	array[i] = '\0';
+	array[i] = NULL;
 	return (array);
 }
 

@@ -67,6 +67,6 @@ char	*ft_itoa(int n)
 		nbr /= 10;
 	}
 	if (sign)
-	str[0] = '-';
+		str[0] = '-';
 	return (str);
 }
