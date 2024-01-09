@@ -6,7 +6,7 @@
 #    By: afontele <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/11 10:06:57 by afontele          #+#    #+#              #
-#    Updated: 2023/12/11 10:07:30 by afontele         ###   ########.fr        #
+#    Updated: 2024/01/09 14:51:47 by afontele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,9 +62,6 @@ $(NAME): $(OBJS)
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-	gcc -nostartfiles -shared -o libft.so $(OBJS)
 clean:
 	$(RM) $(OBJS)
 
