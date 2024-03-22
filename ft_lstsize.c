@@ -6,7 +6,7 @@
 /*   By: afontele <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 15:09:03 by afontele          #+#    #+#             */
-/*   Updated: 2024/03/22 15:10:11 by afontele         ###   ########.fr       */
+/*   Updated: 2024/03/22 16:01:30 by afontele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	i;
 
 	i = 0;
-	while (lst->next != NULL)
+	while (lst)
 	{
 		lst = lst->next;
 		i++;

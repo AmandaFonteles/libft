@@ -6,7 +6,7 @@
 #    By: afontele <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/11 10:06:57 by afontele          #+#    #+#              #
-#    Updated: 2024/01/10 16:11:36 by afontele         ###   ########.fr        #
+#    Updated: 2024/03/22 16:37:07 by afontele         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ SRCS =	ft_atoi.c \
 
 SRCS_BONUS = ft_lstadd_back.c \
 				ft_lstadd_front.c \
-				ft_lstcler.c \
+				ft_lstclear.c \
 				ft_lstdelone.c \
 				ft_lstiter.c \
 				ft_lstlast.c \
